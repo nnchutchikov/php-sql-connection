@@ -1,0 +1,23 @@
+{
+    "name": "nnchutchikov/php-sql-connection",
+    "description": "Classes to work with data base connection uses PDO",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nnchutchikov",
+            "email": "nnchutchikov@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "NNChutchikov\\Sql\\Connection\\": "src/"
+        }
+    }
+}

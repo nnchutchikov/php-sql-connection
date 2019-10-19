@@ -1,0 +1,36 @@
+<phpunit
+  backupGlobals="true"
+  backupStaticAttributes="false"
+  cacheTokens="false"
+  colors="true"
+  convertErrorsToExceptions="true"
+  convertNoticesToExceptions="true"
+  convertWarningsToExceptions="true"
+  forceCoversAnnotation="false"
+  processIsolation="false"
+  stopOnError="false"
+  stopOnFailure="false"
+  stopOnIncomplete="false"
+  stopOnSkipped="false"
+  stopOnRisky="false"
+  timeoutForSmallTests="1"
+  timeoutForMediumTests="10"
+  timeoutForLargeTests="60"
+  verbose="false"
+>
+  <testsuites>
+    <testsuite name="Unit tests">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+<filter>
+  <whitelist processUncoveredFilesFromWhitelist="true">
+    <directory suffix=".php">src</directory>
+    <exclude>
+    </exclude>
+  </whitelist>
+</filter>
+<logging>
+    <log type="coverage-html" target="coverage/" lowUpperBound="35" highLowerBound="90"/>
+ </logging>
+</phpunit>
